@@ -178,6 +178,22 @@ body {
     background-color:#0594b4;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-links img {
+    margin: 0 5px;
+}
+
 /* iPad version */
 @media (min-width: 768px) and (max-width: 1025px) {
     body {
