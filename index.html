@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>How old days you are?</title>
+</head>
+<body>
+    <div class="container">
+        <p id="welcome-text">
+            <span>Have you ever wondered how many DAYS you are &#128173; ?</span>
+            <span>And what about when is your '10 000 days Birthday' ?</span> 
+            <span>Maybe it's time to bake a birthday cake &#127874; ? </span>
+            <span>Let's try it! &#127873; </span>
+        </p>
+        
+        <div id="results-days">
+            <p>You are <span id="days-old">0</span> days old</p>
+
+            <div class="you-are-here-container">
+                <div id="you-are-here-marker">
+                    <span>You are here</span>
+                    <div>
+                        &#128205;
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="life-stage">
+                    &#127874 </br> 5000 <span id="life-stage-5000" class="life-stage-date"></span> 
+                </div>
+                <div class="life-stage">
+                    &#127874 </br> 10 000 <span id="life-stage-10000" class="life-stage-date"></span> 
+                </div>
+                <div class="life-stage">
+                    &#127874 </br> 15 000 <span id="life-stage-15000" class="life-stage-date"></span> 
+                </div>
+                <div class="life-stage">
+                    &#127874 </br> 20 000 <span id="life-stage-20000" class="life-stage-date"></span> 
+                </div>
+                <div class="life-stage">
+                    &#127874 </br> 25 000 <span id="life-stage-25000" class="life-stage-date"></span>  
+                </div>
+                <div class="life-stage">
+                    &#127874 </br> 30 000 <span id="life-stage-30000" class="life-stage-date"></span> 
+                </div>
+            </div>
+
+            <img
+                frameBorder="0" 
+                id="giffy"
+                class="giphy-embed" 
+                allowFullScreen
+            >
+        </div>
+
+        <div id="date-selectors" class="select-date">
+            <div class="select-month">
+                <div class="select-title">
+                    Month &#128197;
+                    <p>Select the month</p>
+                </div>
+                <select type="text" id="input-month" name="month" class="input-screen" required>
+                </select>
+            </div>
+            <div class="select-day">
+                <div class="select-title">
+                    Day &#128197;
+                    <p>Select the day</p>
+                </div>
+                <select name="day" id="input-day" class="input-screen" required> 
+                </select>
+            </div>
+            <div class="select-year">
+                <div class="select-title">
+                    Year &#128197;
+                    <p>Select the year</p>
+                </div>
+                <select name="year" id="input-year" class="input-screen" required>
+                </select>
+            </div>  
+        </div>
+
+        <div class="select-button select-button-min">
+            <button type="button" id="calculate-button">Come on &#128270; </button>
+        </div>
+        
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

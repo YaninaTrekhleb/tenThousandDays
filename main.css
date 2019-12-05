@@ -1,0 +1,251 @@
+/* @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Bangers|Gamja+Flower|Indie+Flower&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/jason-leung-Xaanw0s0pMk-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#welcome-text {
+    display: block; /* поменять местами */
+}
+
+#results-days {
+    display: none; /* поменять местами */
+    color: #ffffff;
+    text-shadow: 3px 1px #025D70;
+    font-size: 2rem;
+}
+
+#days-old {
+    display: inline;
+}
+
+.you-are-here-container {
+    margin-bottom: -9px;
+}
+
+#you-are-here-marker span {
+    font-size: 0.9rem;
+    color: red;
+    text-shadow: 1px 1px rgb(253, 253, 253);
+    white-space: nowrap;
+    margin-left: -47px;
+}
+
+#you-are-here-marker {
+    width: 1px;
+    overflow: visible;
+    margin-left: 0;
+}
+
+#you-are-here-marker div {
+    margin-left: -18px;
+}
+
+.giphy-embed {
+   width: 360px;
+   height: 240px;
+   margin-top: 3rem;
+}
+
+.timeline {
+    background-color: rgb(255, 255, 255);
+    /* font-family: 'Indie Flower', cursive;  */
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    height: 2px;
+    border-radius: 2px;
+    overflow: visible;
+    margin-bottom: 3rem;
+}
+
+.life-stage {
+    font-size: 1rem;
+    margin-top: -12px;
+    flex: 1;
+}
+
+.life-stage-date {
+    display: block;
+    color: #ffe240;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.select-date-min {
+    font-size: 1rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.container {
+    flex: 0 0 80%;
+    padding: 1rem;
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 2.4rem;
+    text-align: center;
+    border: 3px solid #025D70;
+    box-shadow: 2px 2px 10px 10px #002127;
+} 
+
+.container:hover {
+    background-image: url('img/jason-leung-Xaanw0s0pMk-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease-in;
+}
+
+.container p span {
+    display: block;
+    color: #ffffff;
+    text-shadow: 3px 1px #D11991;
+}
+
+.select-date {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+
+.select-month,
+.select-day,
+.select-year {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 1px #015C6F;
+}
+
+.select-title {
+    flex: 1;
+}
+
+.input-screen {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #353535;
+    border: none;
+}
+
+.select-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-date p {
+    font-size: 1.3rem;
+    margin: 0.3rem 0;
+}
+
+.select-button button {
+    font-family: 'Bangers', cursive;
+    /* font-family: 'Indie Flower', cursive; */
+    text-transform: capitalize;
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: #025A6E;
+    border-radius: 8px;
+    border: 1px solid #013f4d;
+    box-shadow: 1px 3px #033742;
+    outline: none;
+    transition: all 1s ease-in;
+}
+
+.select-button button:hover {
+    color:#ffffff;
+    background-color:#0594b4;
+}
+
+/* iPad version */
+@media (min-width: 768px) and (max-width: 1025px) {
+    body {
+        margin: 0; 
+        height: 100%; 
+        overflow: hidden;
+    }
+
+    .container {
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+        margin: 0; 
+        height: 100%; 
+        overflow: hidden;
+    }
+
+    .input-screen {
+        font-size: 0.9rem;
+    }
+}
+
+/* iPhone version */
+@media (min-width: 414px) and (max-width: 767px) {
+    .body {
+        margin: 0; 
+        height: 100%; 
+        overflow: hidden;
+    }
+
+    .container {
+        font-size: 1.3rem;
+        padding: 0;
+    }
+
+    .select-date {
+        flex-direction: column;
+        font-size: 0.9rem;
+        padding: 0;
+    }
+
+    .select-date p {
+        font-size: 0.8rem;
+    }
+
+    .select-month,
+    .select-day,
+    .select-year {
+        width: 70%;
+        padding: 0.2rem 3rem;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #results-days {
+        font-size: 1.5rem;
+    }
+
+    .life-stage {
+        font-size: 0.7rem;
+    }
+
+    .input-screen {
+        font-size: 0.7rem;
+    }
+
+    .select-button button {
+        font-size: 1.1rem;
+    }
+}
