@@ -180,13 +180,15 @@ body {
 
 footer {
     position: absolute;
-    bottom: 0;
-    margin-bottom: 15px;
+    margin-left: -100px;
+    margin-top: 100px;
+    top: 0;
+    right: 0;
 }
 
 .contact-links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
