@@ -201,7 +201,7 @@ body {
 }
 
 /* iPhone version */
-@media (min-width: 414px) and (max-width: 767px) {
+@media (max-width:767px) {
     .body {
         margin: 0; 
         height: 100%; 
